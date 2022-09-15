@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:padding="8dp"
+    app:cardCornerRadius="20dp">
+    <FrameLayout
+        android:id="@+id/layer"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#3E000000"
+        />
+    <LinearLayout
+        android:id="@+id/container"
+        android:padding="8dp"
+        android:alpha="0.8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#E1E1E1"
+        android:backgroundTint="#8D555451"
+        />
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:textStyle="bold"
+        android:textColor="@color/complite_text"
+        android:text="tv_title" />
+
+    <ImageView
+        android:id="@+id/btn_delete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="5dp"
+        android:alpha="0.8"
+        android:background="@drawable/state_pressed_ripple"
+        android:src="@drawable/ic_delete"
+        android:layout_gravity="center_vertical"
+        />
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:visibility="gone"
+        android:id="@+id/selected_radio"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="10dp"
+        android:layout_gravity="center_vertical"
+        />
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
